@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="mainPage.css">
+    <title>Food Discovery</title>
+</head>
+<body>
+    <section>
+        <div class="container initial">
+            <h1 class="mainTitle">Search a Recipe</h1>
+            <form>
+                <input type="text" id="specificSearch" placeholder="Search..."/><button type="submit"><i class="fas fa-search"></i></button>
+                <select name= "filter" id="filter">
+                    <option disabled selected value>Filter</option>
+                    <option value="all">All</option>
+                    <option value="high-protein">High Protein</option>
+                    <option value="low-carb">Low Carbs</option>
+                    <option value="low-fat">Low Fat</option>
+                </select>
+            </form>
+            <div class= "error"></div>
+        
+        <div class="searchResult">
+        </div>
+        <div class="bottomPage initial">
+            <button id="nextBttn" onclick="nextPage()">Next</button>
+        </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <script src="mainPage.js"<script></script>
+</footer>
+</html>
